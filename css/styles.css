@@ -16,19 +16,22 @@ body {
 /*SECCION 1*/
 .sect {
   display: flex;
+
   height: auto;
   background-color: rgb(171, 175, 175);
   justify-content: center;
   align-items: center;
 }
 
+
 /*movil*/
 /*CONTENEDOR*/
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 50px;
-  padding-top: 12em;
+  gap: 30px;
+  padding-top: 7em;
+  padding-bottom:3em ;
 }
 
 .card {
@@ -63,18 +66,17 @@ body {
 }
 
 @media screen and (min-width: 1000px) {
+ 
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 90px;
-    padding: 12em;
-    max-width: 70%;
   }
   .card {
     position: relative;
     flex-direction: column;
     justify-content: center;
-    width: 390px;
+    width: 400px;
     height: 270px;
     background-color: red;
     font-size: 0.8em;
@@ -117,7 +119,7 @@ body {
   }
 
   .imgBx img {
-    width: 390px;
+    width: 100%;
   }
 }
 
@@ -125,13 +127,19 @@ body {
   .sect {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin: auto;
   }
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 90px;
     padding: 12em;
-    max-width: 70%;
   }
+}
+
+
+/*SECTION 2*/
+.sect2{
+  background-color: aqua;
+  height: 300px;
 }
